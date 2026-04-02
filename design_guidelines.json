@@ -1,0 +1,77 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "emotional_tone": "Authoritative, clear, precise, and highly functional. A 'Control Room' feel.",
+  "design_philosophy": "Information density without clutter. Use 1px hard borders, no soft shadows, and high-contrast typography to create a brutalist yet polished SaaS interface. Color is used strictly for function (status, alerts) and never for decoration.",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F4F4F5",
+    "surface_hover": "#E4E4E7",
+    "border": "#E4E4E7",
+    "text_primary": "#09090B",
+    "text_secondary": "#52525B",
+    "primary_action": "#09090B",
+    "primary_action_hover": "#27272A",
+    "status": {
+      "success": "#008A00",
+      "warning": "#FFB000",
+      "error": "#E50000",
+      "info": "#0000FF"
+    }
+  },
+  "typography": {
+    "heading_font": "Chivo",
+    "body_font": "Manrope",
+    "hierarchy": {
+      "h1": "text-4xl tracking-tighter font-black",
+      "h2": "text-2xl tracking-tight font-bold",
+      "h3": "text-xl tracking-tight font-bold",
+      "h4": "text-lg font-bold",
+      "body": "text-sm leading-relaxed",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold text-zinc-500"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_system": "MODE B: 'Control Room' Grid - gap-4 or gap-6. Every pixel must be utilized with tight widget integration. Use grid-cols-1 md:grid-cols-3 lg:grid-cols-4 for analytics.",
+    "container_padding": "p-6 md:p-8",
+    "sidebar": "w-64 border-r border-zinc-200 bg-white flex flex-col h-screen fixed left-0 top-0",
+    "main_content": "ml-64 min-h-screen bg-[#FAFAFA]"
+  },
+  "components": {
+    "button": "rounded-none border border-zinc-950 shadow-none hover:bg-zinc-900 hover:text-white transition-colors uppercase tracking-widest text-xs font-bold",
+    "card": "rounded-none border border-zinc-200 bg-white shadow-none",
+    "input": "rounded-none border-zinc-200 shadow-none focus-visible:ring-1 focus-visible:ring-zinc-950 focus-visible:border-zinc-950",
+    "badge": "rounded-none text-xs font-bold uppercase tracking-wider px-2 py-1",
+    "table": "text-sm, subtle bottom borders on rows, no vertical borders, minimalist header with uppercase tiny text"
+  },
+  "motion_and_interaction": {
+    "hover": "Harsh, immediate color flips (e.g., white background to black background) rather than soft fades.",
+    "transitions": "transition-all duration-150 ease-in-out",
+    "accessibility": "Respect prefers-reduced-motion."
+  },
+  "icons": "lucide-react",
+  "media": {
+    "login_background": {
+      "url": "https://images.pexels.com/photos/1527549/pexels-photo-1527549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Abstract geometric glass building pattern"
+    },
+    "avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1769636929261-e913ed023c83?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzUxMjcyNDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Smiling man in dark cardigan"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762522927402-f390672558d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzUxMjcyNDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man in white collared shirt"
+      }
+    ],
+    "empty_state_graphic": {
+      "url": "https://images.pexels.com/photos/31757550/pexels-photo-31757550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Bold geometric pattern in black and white"
+    }
+  },
+  "testing": {
+    "data_testid_guidelines": "Every interactive and key informational element MUST include a `data-testid` attribute (kebab-case, role-based). Examples: `login-form-submit-button`, `sidebar-nav-payroll`, `clock-in-button`."
+  },
+  "instructions_to_main_agent": "Use Shadcn/UI heavily but strip all rounded corners (`rounded-none`) and shadows (`shadow-none`) to fit the Swiss Brutalist archetype. Ensure contrast is extremely high. All UI elements should be structurally separated by 1px solid borders. Install fonts from Google Fonts: Chivo (headings) and Manrope (body)."
+}
